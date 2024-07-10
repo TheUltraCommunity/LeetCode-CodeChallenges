@@ -1,7 +1,9 @@
-package java;
+package strings.java;
+
 import java.util.*;
 
 public class problem_3 {
+    
     public String reverseWords(String s) {
         s = s.trim();
         

@@ -1,4 +1,5 @@
-package java;
+package strings.java;
+
 
 public class problem_4 {
     public boolean arrayStringsAreEqual(String[] word1, String[] word2) {
