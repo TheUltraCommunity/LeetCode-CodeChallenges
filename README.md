@@ -20,18 +20,43 @@ LeetCode is a platform for preparing technical coding interviews. It provides a 
 
 To get started with this repository, follow these steps:
 
-1. **Clone the repository:**
+1. Fork the repository
 
-    ```sh
-    git clone https://github.com/your-username/LeetCode-CodeChallenges.git
+2. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/(your-username)/LeetCode-CodeChallenges.git
+    ```
+
+
+    there go to the folder where you want to work on, then make a new folder with the name of the language in which you want to solve and then make a new file with the name of the problem you want to solve
+
+    ```bash
     cd LeetCode-CodeChallenges
     ```
 
-2. **Install any necessary dependencies:**
+    ```bash
+    git add .
+    ```
+        
+    ```bash
+    git commit -m "Added new problem"
+    ```
+
+    ```bash
+    git push origin main
+    ```
+
+    > **make a `pull request`**
+
+    > **we will `review` and `merge` it**
+
+
+3. **Install any necessary dependencies:**
 
     Depending on the programming language used for the solutions, you may need to install specific dependencies. Refer to the individual solution files for more details.
 
-3. **Run the solutions:**
+4. **Run the solutions:**
 
     Each solution is contained within its own file or folder. Navigate to the appropriate directory and run the solution using the relevant command for the programming language.
 
