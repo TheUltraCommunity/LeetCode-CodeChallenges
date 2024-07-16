@@ -1,4 +1,4 @@
-package linkedlists.java;
+package linked_lists.java;
 class ListNode {
          int val;
          ListNode next;
