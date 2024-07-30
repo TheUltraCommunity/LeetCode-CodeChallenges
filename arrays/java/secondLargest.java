@@ -1,5 +1,5 @@
 import java.util.*;
-public class problem_2 {
+public class secondLargest {
     public static void main(String[] args) {
         int[] arr = {10, 20, 4, 45, 99, 45}; // Example array
         int secondLargest = findSecondLargestDistinctElement(arr);
