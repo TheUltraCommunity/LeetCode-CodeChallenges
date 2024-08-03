@@ -1,4 +1,4 @@
-public class problem_1 {
+public class largestElement {
     public static void main(String[] args) {
         int[] arr = {10, 20, 4, 45, 99, 6}; // Example array
         int largest = findLargestElement(arr);
