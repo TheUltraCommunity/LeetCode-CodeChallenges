@@ -1,27 +1,38 @@
-package graphs.java;
+import java.util.*;
 
-public class numberOfProvinces {
-    public int findCircleNum(int[][] isConnected) {
-        int V = isConnected.length;
-        boolean[] visited = new boolean[V];
-        int count = 0;
+public class NumberOfProvinces {
+  public static void main(String[] args) {
+      int[][] adj = {{1, 0, 0, 1}, {0, 1, 1, 0}, {0, 1, 1, 0}, {1, 0, 0, 1} };
 
-        for(int i = 0; i < V; i++){
-            if(!visited[i]){
-                dfs(isConnected, visited, i);
-                count++;
-            }
-        }
-        
-        return count;
+      int count = function(adj);
+      System.out.println(count);
+  }
+  public static int function(int[][] adj){
+    int count = 0;
+    int V = adj.length;
+    boolean[] visited = new boolean[V];
+
+    for(int i = 0 ; i <V; i++){
+      if(!visited[i]){
+        count += 1;
+        bfs(i, visited, adj);
+      }
     }
+    return count;
+  }
+  public static void bfs(int node , boolean[] visited, int[][] adj){
+    Queue<Integer> q = new LinkedList<>();
+    q.add(node);
 
-    private void dfs(int[][] isConnected, boolean[] visited, int i) {
-        visited[i] = true;
-        for(int j = 0; j < isConnected.length; j++){
-            if(isConnected[i][j] == 1 && !visited[j]){
-                dfs(isConnected, visited, j);
-            }
+    while(!q.isEmpty()){
+      int polled = q.poll();
+
+      for(int i = 0 ; i < adj.length; i++){
+        if(adj[polled][i] == 1 && !visited[i]){
+            q.add(i);
+            visited[i] = true;
         }
+      }
     }
+  }
 }
